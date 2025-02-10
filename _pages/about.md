@@ -31,5 +31,3 @@ When I’m not working with data, you’ll find me swimming, exploring new coffe
 
 Feel free to explore my projects or reach out for collaborations. Let’s decode data together!
 
-- **LinkedIn**: [linkedin.com/in/parnikakhattri](https://www.linkedin.com/in/parnikakhattri)  
-- **Email**: [parnika.khattri04@gmail.com](mailto:parnika.khattri04@gmail.com)  
