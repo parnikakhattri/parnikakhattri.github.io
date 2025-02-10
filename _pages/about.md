@@ -1,15 +1,13 @@
 ---
 permalink: /
-title: "About Me"
+title: "Parnika Khattri"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-# Parnika Khattri
-
-Hi, I'm Parnika Khattri, a data enthusiast passionate about transforming raw data into meaningful insights. With a Master’s in Business Analytics from Monash University, I blend technical expertise with business acumen to solve complex problems and drive data-driven decision-making.
+Hi, I'm Parnika, a data enthusiast passionate about transforming raw data into meaningful insights. With a Master’s in Business Analytics from Monash University, I blend technical expertise with business acumen to solve complex problems and drive data-driven decision-making.
 
 ## My Journey into Data
 
