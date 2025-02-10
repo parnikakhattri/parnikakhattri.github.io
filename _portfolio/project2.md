@@ -14,18 +14,14 @@ Coffedia is an **interactive R Shiny application** designed to empower coffee en
 The coffee industry is rich in data but lacks a centralised, accessible platform for meaningful exploration. Consumers struggle to find detailed insights on coffee brands and outlets, while businesses face challenges in analysing customer preferences and market trends. Coffedia addresses these challenges by delivering an intuitive tool that combines analytics, feedback storage and interactive visualisations to bridge the gap between data and actionable insights.
 
 ## **Key Features & Functionality**
-
 ### **1. About Tab**
 - Provides an overview of **Coffedia’s mission, features and the inspiration** behind its development.
-
 ### **2. Popularity Tab**
 - Visualise the **popularity of coffee brands** across different countries.
 - Includes **dynamic filtering options** for in-depth brand and country-specific analysis.
-
 ### **3. Outlets Tab**
 - Explore **coffee outlet locations** in various cities using an easy-to-navigate table.
 - Filter results by **country, city and brand** to find specific coffee spots.
-
 ### **4. Feedback Tab**
 - Collect and store user feedback on coffee brands and outlets, including ratings and reviews.
 - Visualise feedback through an engaging **word cloud** and explore detailed individual reviews.
@@ -38,17 +34,14 @@ The coffee industry is rich in data but lacks a centralised, accessible platform
 1. **Data Requirements**:
    - Input data includes coffee outlet information (country, city, brand) and customer feedback.
    - Excel was used to compile and organise data from multiple brands into a uniform structure for analysis.
-
 2. **Setup Instructions**:
    - Install necessary R libraries for running the app.
    - Place the prepared dataset and feedback files in the designated `data/` folder.
-
 3. **Launch the App**:
    - Run the app script in RStudio with the command:
      ```r
      shiny::runApp()
      ```
-     
 4. **Explore**:
    - Use the app’s intuitive tabs to visualise brand popularity, locate outlets and analyse feedback trends.
 
