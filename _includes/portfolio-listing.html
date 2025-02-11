@@ -1,32 +1,34 @@
-<!-- Portfolio Listing Section -->
+<!-- 📢 Catchy Portfolio Intro -->
+<section class="portfolio-intro">
+  <h2>📊 Transforming the messy data into compelling stories, One Project at a Time</h2>
+  <p>Explore my work in data analytics, machine learning, and visualisation.</p>
+</section>
+
+<!-- 📂 Portfolio Listing -->
 <div class="portfolio-container">
   {% for project in site.portfolio %}
   <div class="portfolio-item">
-    
-    <!-- Project Image -->
-    <div class="portfolio-image">
-      <a href="{{ project.url }}">
-        <img src="{{ project.image }}" alt="{{ project.title }}">
-      </a>
-    </div>
 
-    <!-- Project Details -->
-    <div class="portfolio-details">
-      <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
-      <p class="portfolio-date">📅 Published: {{ project.date | date: "%B %d, %Y" }}</p>
-      <p class="portfolio-description">{{ project.description }}</p>
+    <!-- Flexbox for Side-by-Side Layout -->
+    <div class="portfolio-content-wrapper">
 
-      <!-- Tags -->
-      {% if project.tags %}
-      <p class="portfolio-tags">🏷️ Tags: 
-        {% for tag in project.tags %}
+      <!-- 📌 Project Details (Left Side) -->
+      <div class="portfolio-details">
+        <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+        <p class="portfolio-description">{{ project.description }}</p>
+        <p class="portfolio-tags">🏷️ Tags:
+          {% for tag in project.tags %}
           <span class="tag">{{ tag }}</span>
-        {% endfor %}
-      </p>
-      {% endif %}
-      
-      <!-- View Project Link -->
-      <a href="{{ project.url }}" class="view-project">View Project →</a>
+          {% endfor %}
+        </p>
+        <p class="portfolio-date">📅 Published: {{ project.date | date: "%B %d, %Y" }}</p>
+      </div>
+
+      <!-- 🖼 Project Image (Right Side) -->
+      <div class="portfolio-image">
+        <img src="{{ project.image }}" alt="{{ project.title }}">
+      </div>
+
     </div>
 
   </div>
