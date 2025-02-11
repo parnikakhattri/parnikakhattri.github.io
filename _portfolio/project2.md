@@ -4,7 +4,7 @@ image: /images/coffedia.png
 description: "An interactive Shiny app exploring coffee trends and feedback worldwide."
 url: /portfolio/coffedia/
 date: 2025-01-15
-tags: [R, Shiny, Visualisation]
+tags: [R, Shiny, Data Manipulation, Interactive Visualisations, Data Storage, Feedback Handling]
 ---
 
 ## **Project Summary**
