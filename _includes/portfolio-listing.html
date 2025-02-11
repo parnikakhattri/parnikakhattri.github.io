@@ -1,13 +1,14 @@
+<!-- 🌟 Portfolio Intro Section -->
 <section class="portfolio-intro">
-  <h2>From Raw Data to Actionable Insights</h2>
-  <p>Data is everywhere—making sense of it is what I do best.
-    Here, you'll find projects that showcase my skills in data analytics, machine learning and automation.
-    Explore how I transform complex datasets into meaningful visualisations and solutions.</p>
+  <h2>Data is everywhere—making sense of it is what I do best.</h2>
+  <p>Here, you'll find projects that showcase my skills in data analytics, machine learning, and automation.</p>
+  <p>Explore how I transform complex datasets into meaningful visualizations and solutions.</p>
 </section>
 
 <!-- 📂 Portfolio Listing -->
 <div class="portfolio-container">
-  {% for project in site.portfolio %}
+  {% assign sorted_projects = site.portfolio | sort: "date" | reverse %}
+  {% for project in sorted_projects %}
   <div class="portfolio-item">
 
     <!-- 🛠 Flexbox Wrapper (Ensures Side-by-Side Layout) -->
@@ -20,14 +21,23 @@
 
       <!-- 📌 Project Details (Right Side - 50%) -->
       <div class="portfolio-details" style="flex: 1; text-align: left;">
+
+        <!-- 🔹 Title -->
         <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
+
+        <!-- 📅 Published Date -->
+        <p class="portfolio-date">📅 Published: {{ project.date | date: "%B %d, %Y" }}</p>
+
+        <!-- 📖 Description -->
         <p class="portfolio-description">{{ project.description }}</p>
-        <p class="portfolio-tags">🏷️ Tags:
+
+        <!-- 🏷️ Tags -->
+        <div class="tags-container">
           {% for tag in project.tags %}
           <span class="tag">{{ tag }}</span>
           {% endfor %}
-        </p>
-        <p class="portfolio-date">📅 Published: {{ project.date | date: "%B %d, %Y" }}</p>
+        </div>
+
       </div>
 
     </div>

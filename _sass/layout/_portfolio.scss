@@ -1,4 +1,4 @@
-/* 📌 Portfolio Page Header */
+/* Portfolio Page Header */
 .portfolio-header {
   text-align: center;
   padding: 50px 20px;
@@ -15,14 +15,14 @@
   font-size: 1.2rem;
 }
 
-/* 📂 Portfolio Container */
+/* Portfolio Container */
 .portfolio-container {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-/* 📌 Portfolio Items (Each Project) */
+/* Portfolio Items (Each Project) */
 .portfolio-item {
   display: flex;
   /* Ensures image & text side by side */
@@ -37,13 +37,13 @@
   position: relative;
 }
 
-/* 🟢 Highlight on Hover (Interactive Effect) */
+/* Highlight on Hover (Interactive Effect) */
 .portfolio-item:hover {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
   transform: scale(1.02);
 }
 
-/* 🔹 Subtle Divider Between Projects */
+/* Subtle Divider Between Projects */
 .portfolio-item::after {
   content: "";
   position: absolute;
@@ -54,7 +54,7 @@
   background-color: #ddd;
 }
 
-/* 🖼 Portfolio Image (Left Side - Enlarged to Fit 50%) */
+/* Portfolio Image (Left Side - Enlarged to Fit 50%) */
 .portfolio-image {
   flex: 1;
   max-width: 50%;
@@ -72,28 +72,56 @@
   text-align: left;
 }
 
-/* 🏷 Project Title */
+/* Project Title */
 .portfolio-details h3 {
   font-size: 1.75rem;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-/* 📝 Description */
+/* Description */
 .portfolio-details p {
   font-size: 1rem;
   color: #444;
 }
 
-/* 🏷️ Tags */
-.portfolio-tags {
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* 📅 Date */
+/* Date */
 .portfolio-date {
   font-size: 0.9rem;
   color: #888;
   margin-top: 10px;
+}
+
+/* Portfolio Tag Styling */
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  /* Adds space between tags */
+  margin-top: 10px;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  /* Light Grey */
+  color: #333;
+  /* Dark Text */
+  padding: 6px 12px;
+  border-radius: 15px;
+  /* Rounded pill shape */
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.tag:nth-child(odd) {
+  background-color: #d6d6d6;
+  /* Darker Grey for alternating tags */
+}
+
+.tag::before {
+  content: "🏷️ ";
+  /* Adds an icon before each tag */
+  color: #666;
+  /* Slightly darker icon */
 }
