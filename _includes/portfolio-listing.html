@@ -1,7 +1,8 @@
-<!-- 📢 Catchy Portfolio Intro -->
 <section class="portfolio-intro">
-  <h2>📊 Transforming the messy data into compelling stories, One Project at a Time</h2>
-  <p>Explore my work in data analytics, machine learning, and visualisation.</p>
+  <h2>From Raw Data to Actionable Insights</h2>
+  <p>Data is everywhere—making sense of it is what I do best.
+    Here, you'll find projects that showcase my skills in data analytics, machine learning and automation.
+    Explore how I transform complex datasets into meaningful visualisations and solutions.</p>
 </section>
 
 <!-- 📂 Portfolio Listing -->
@@ -9,11 +10,16 @@
   {% for project in site.portfolio %}
   <div class="portfolio-item">
 
-    <!-- Flexbox for Side-by-Side Layout -->
-    <div class="portfolio-content-wrapper">
+    <!-- 🛠 Flexbox Wrapper (Ensures Side-by-Side Layout) -->
+    <div class="portfolio-content-wrapper" style="display: flex; align-items: center; gap: 20px; flex-direction: row;">
 
-      <!-- 📌 Project Details (Left Side) -->
-      <div class="portfolio-details">
+      <!-- 🖼 Project Image (Left Side - Enlarged to Fit 50%) -->
+      <div class="portfolio-image" style="flex: 1;">
+        <img src="{{ project.image }}" alt="{{ project.title }}" style="width: 100%; height: auto;">
+      </div>
+
+      <!-- 📌 Project Details (Right Side - 50%) -->
+      <div class="portfolio-details" style="flex: 1; text-align: left;">
         <h3><a href="{{ project.url }}">{{ project.title }}</a></h3>
         <p class="portfolio-description">{{ project.description }}</p>
         <p class="portfolio-tags">🏷️ Tags:
@@ -22,11 +28,6 @@
           {% endfor %}
         </p>
         <p class="portfolio-date">📅 Published: {{ project.date | date: "%B %d, %Y" }}</p>
-      </div>
-
-      <!-- 🖼 Project Image (Right Side) -->
-      <div class="portfolio-image">
-        <img src="{{ project.image }}" alt="{{ project.title }}">
       </div>
 
     </div>
