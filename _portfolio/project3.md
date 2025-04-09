@@ -29,7 +29,7 @@ This dashboard helps decision-makers understand growth patterns, seasonal behavi
 
 ## **Live Dashboard**
 
-<iframe title="retail_insights" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=cf08789b-1730-4411-916c-2c42784319ec&autoAuth=true&ctid=ef7a487a-77ca-410a-803d-e426b62a587f" frameborder="0" allowFullScreen="true"></iframe>
+<iframe title="retail_insights" width="1140" height="541.25" src="https://app.powerbi.com/groups/me/reports/c74b2de3-29a3-40ab-8313-ab69625e257d?ctid=ef7a487a-77ca-410a-803d-e426b62a587f&pbi_source=linkShare" frameborder="0" allowFullScreen="true"></iframe>
 
 ## **Results & Impact**
 
