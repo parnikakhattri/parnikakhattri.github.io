@@ -27,9 +27,27 @@ This dashboard helps decision-makers understand growth patterns, seasonal behavi
 - **Techniques**: Time Series Decomposition, DAX Measures, Slicers, Power Query  
 - **Data Modelling**: Relationship management and dynamic visual interactivity
 
-## **Live Dashboard**
+## **Dashboard Snapshots**
 
-<iframe title="retail_insights" width="1140" height="541.25" src="https://app.powerbi.com/groups/me/reports/c74b2de3-29a3-40ab-8313-ab69625e257d?ctid=ef7a487a-77ca-410a-803d-e426b62a587f&pbi_source=linkShare" frameborder="0" allowFullScreen="true"></iframe>
+Due to Power BI restrictions, the live dashboard could not be shared publicly. Below are high-resolution screenshots of key visuals from the dashboard:
+
+### Time Series Views  
+![Trend View](/images/retail-dashboard-trend.png)  
+*Trend analysis across industries showing post-pandemic recovery patterns.*
+
+![Seasonally Adjusted View](/images/retail-dashboard-seasonally-adjusted.png)  
+*Seasonal fluctuations removed to reveal underlying patterns.*
+
+![Original View](/images/retail-dashboard-original.png)  
+*Unadjusted data showing the raw sales patterns.*
+
+### Monthly Sales  
+![Monthly Bar Graph](/images/retail-dashboard-monthly-bars.png)  
+*December stands out consistently as the top-performing month across industries.*
+
+### Industry Breakdown  
+![Retail Industry Tree Map](/images/retail-dashboard-tree-map.png)  
+*Food Retail and Household Goods dominate retail contribution.*
 
 ## **Results & Impact**
 
@@ -66,6 +84,7 @@ The *“Change Over Time”* line graph revealed how each industry evolved from 
 
 ## **Download the Report**
 You can download the full `.pbix` file from GitHub here:  
-[Download RetailDashboard.pbix](https://github.com/parnikakhattri/parnikakhattri.github.io/raw/main/RetailDashboard.pbix)
+[Download RetailDashboard.pbix](https://github.com/parnikakhattri/parnikakhattri.github.io/blob/main/projects/Retail%20Recovery%20Trends%20/retail_insights.pbix)
+
 
 
